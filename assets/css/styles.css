@@ -47,7 +47,10 @@
 .col-hafl{
     width: 50%;
 }
-.co-third{
+.col-66{
+    width: calc(33.33333%*2);
+}
+.col-third{
     width: 33.33333%;
 }
 .btn-de{
@@ -176,6 +179,9 @@ transform: translateX(-50px);
 #content{
     
 }
+.logoepl{
+
+}
 
 #content .content-section{
     width: 800px;
@@ -212,30 +218,51 @@ transform: translateX(-50px);
     margin-top: 40px;
     
 }
-#content .member-item{
-    float: left;
-    width: 33.33333%;
-    text-align: center;
-}
+
 #content .member-name{
-    font-size: 20px;
-    
-    
+    font-size: 18px; 
 }
 #content .member-avatar{
     margin-top: 15px;
-    width: 160px;
+    width: 200px;
+    min-height: 142px;
     border-radius: 4px;
     
 }
-
-.tour-section{
+/*News Section*/
+.news-section{
     background-color: #000;
+}
+.news-section > .content-section > .section-heading,
+.news-section > .content-section > .section-sub-heading{
+    color: #fff;
+}
+.news-section .news-img{
+    width: 100%;
+    max-height: 160px;
+
+}
+.news-content{
+    background-color: #fff;
+    min-height: 170px;
+    
+}
+.news-content  a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #000;
+
+}
+/*tour-section*/
+.tour-section{
+    background-color: #ff0000;
 
 }
 #content .tour-section .section-sub-heading,
 #content .tour-section .section-heading{
-    color:#ff0000;
+    color:#000;
 }
 .tickets-tour{
     background-color: #fff;
@@ -276,7 +303,7 @@ transform: translateX(-50px);
     line-height: 31px;
 }
 .tour-section .text-notify{
-    color: #ff0000;
+    color: #000;
     margin-top: 32px;
     text-align: center;
     font-size: 18px;
@@ -371,20 +398,29 @@ transform: translateX(-50px);
 
 #footer{
     width: 100%;
-    background-color: #ff0000;
+    background-color: #000;
     min-height: 150px;
-    display: inline-block;
+    
 
+}
+.footer-content{
+    justify-content: center;
+    margin-left: 15px;
 }
 .footer-info {
     font-size: 18px;
     line-height: 1.4;
 
 }
-.footer-info i[class*="ti-"]{
-    width: 30px;
-    
 
+.footer-info a{
+   font-size: 18px;
+   text-decoration: none;
+   color: #fff;
+    
+}
+.footer-icon{
+    width: 20px;
 }
 .footer-form{
     font-size: 15px;
@@ -398,8 +434,8 @@ transform: translateX(-50px);
 }
 .footer-form .form-send{
     padding: 7px 10px;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     border: none;
     
 }
@@ -408,6 +444,18 @@ transform: translateX(-50px);
     color: #000;
     cursor: pointer;
 }
+.modal-match{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0,0,0, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-mulv,
 .modal{
     top: 0;
     bottom: 0;
@@ -421,24 +469,12 @@ transform: translateX(-50px);
     
 
 }
-.modal-mulv{
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    position: fixed;
-    background-color: rgba(0,0,0, 0.3);
-    align-items: center;
-    justify-content: center;
-    display: none;
-}
 
+.modal-mulv.open,
 .modal.open{
     display: flex;
 }
-.modal-mulv.open{
-    display: flex;
-}
+
 .modal-container{
     margin-left: auto;
     margin-right: auto;

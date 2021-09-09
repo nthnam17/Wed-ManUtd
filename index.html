@@ -5,6 +5,7 @@
 <title> Manchester United</title>
 <meta charset="utf-8">
 <html lang="en">
+<link rel="shortcut icon" type="image/png" href="/assets/Icons/WedIcon/MU.ico"/>
 <link rel="stylesheet" href="./assets/css/styles.css">
 <link rel="stylesheet" href="./assets/Icons/themify-icons/themify-icons.css">
     </head>
@@ -23,10 +24,10 @@
             <div id="header">
             <!--Begin Nav-->
          <ul id="nav">
-             <li><a href="">Thông tin</a></li>
-             <li><a href="">Cầu Thủ</a></li>
-             <li><a href="">Lịch Thi đấu</a></li>
-             <li><a href="">Chuyển Nhượng</a></li>
+             <li><a href="#home">Trang Chủ</a></li>
+             <li><a href="#tour">Lịch Thi Đấu</a></li>
+             <li><a href="#squad">Đội Hình</a></li>
+             <li><a href="#news">Tin Tức</a></li>
              <li>
                  <a href="#">
                      Khác
@@ -56,7 +57,7 @@
             </div>
             <div id="content">
                 <!--About Section-->
-                <div class="content-section">
+                <div id="home" class="content-section">
                     
                     <h2 class="section-heading">
                         ManChesTer United
@@ -67,26 +68,79 @@
                     <p class="about-text">là một câu lạc bộ bóng đá chuyên nghiệp có trụ sở tại Old Trafford, Đại Manchester, Anh. Câu lạc bộ đang chơi tại Giải bóng đá Ngoại hạng Anh, giải đấu hàng đầu trong hệ thống bóng đá Anh. Với biệt danh "Quỷ Đỏ", câu lạc bộ được thành lập dưới tên Newton Heath LYR Football Club vào năm 1878, đổi tên thành Manchester United vào năm 1902 và chuyển đến sân vận động hiện tại, Old Trafford, vào năm 1910.
 
                     </p>
-                    <div class="members-list">
-                        <div class="member-item">
-                            <p class="member-name">Bruno Fernandes</p>
-                            <img src="./assets/img/Team/Bruno.JPG" alt="Bruno Fernandes" class="member-avatar">
+                    <div class=" row members-list">
+                        <div class="col col-third text-center">
+                            <p class="member-name">20 Lần Vô Địch EPL</p>
+                            <img src="/assets/img/Team/epl.jpg" alt="Bruno Fernandes" class="member-avatar">
                         </div>
-                        <div class="member-item">
-                            <p class="member-name">Mason GreenWood</p>
-                            <img src="./assets/img/Team/GreenWood.jpg" alt="GreenWood" class="member-avatar">
+                        <div class="col col-third text-center">
+                            <p class="member-name">3 Lần Vô Địch C1</p>
+                            <img src="/assets/img/Team/c1.jpg" alt="GreenWood" class="member-avatar">
                         </div>
-                        <div class="member-item">
-                            <p class="member-name">Marcus Rashford</p>
-                            <img src="./assets/img/Team/rashford.jpg" alt="Marcus Rashford" class="member-avatar">
+                        <div class="col col-third text-center">
+                            <p class="member-name">Cú Ăn 3 Lịch Sử</p>
+                            <img src="/assets/img/Team/eplfac1.jpg" alt="Marcus Rashford" class="member-avatar">
                         </div>
                         
                     </div>
                 </div>
             
                 <div class="clear"></div>
+                <!--News section-->
+                <div class="news-section">
+                    <div id="news" class="content-section">
+                        <h2 class="section-heading">
+                            Tin Tức
+                        </h2>
+                        <p class="section-sub-heading">
+                            Tin Tức Về Câu Lạc Bộ Và Cầu Thủ
+                        </p>
+                        <div class="row mt-16">
+                            <div class="row col col-hafl news-content">
+                                <div class="col col-hafl">
+                                    <img class="news-img" src="assets/img/News/kingisback.jpg" alt="The King Is Back">
+                                </div>
+                                <div class="col col-hafl ">
+                                    <a href="">The King Is Back : King Ronaldo Trở Về Nhà Hát</a>
+                                </div>
+
+                            </div>
+                            <div class="row col col-hafl  news-content">
+                                <div class="col col-hafl">
+                                    <img class="news-img" src="/assets/img/News/past.jpg" alt="Hình Ảnh Từ Quá Khứ">
+                                </div>
+                                <div class="col col-hafl ">
+                                    <a href="#">Quá Khứ Huy Hoàng Liệu Có Tiết Tục ?</a>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                        <div class="row mt-16">
+                            <div class="row col col-hafl news-content">
+                                <div class="col col-hafl">
+                                    <img class="news-img" src="assets/img/News/CR7.jpg" alt="Ronaldo mặc áo số 7">
+                                </div>
+                                <div class="col col-hafl ">
+                                    <a href="">Ronaldo Viết Tiếp Lịch Sử Với Áo Số 7</a>
+                                </div>
+
+                            </div>
+                            <div class="row col col-hafl  news-content">
+                                <div class="col col-hafl">
+                                    <img class="news-img" src="/assets/img/News/List7.jpg" alt="Các Số 7 Vĩ Đại">
+                                </div>
+                                <div class="col col-hafl ">
+                                    <a href="#">Danh Sách Các Số 7 Tại Nhà Hát: Huyền Thoại & Tội Đồ</a>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!--Tour Section-->
-                <div class="tour-section">
+                <div id="tour" class="tour-section">
                     <div class="content-section">
                          
                         <h2 class="section-heading">
@@ -95,17 +149,36 @@
                         <p class="section-sub-heading">
                              Rực Cháy Cùng Quỷ Đỏ
                         </p>
-                        <ul class="tickets-tour ">
-                            <li><a href="">tháng 8 <spam class="notify">Chưa Thi Đấu</spam> <span class="slot">1</span></a></li>
-                            <li><a href="">tháng 9 <spam class="notify">Chưa Thi Đấu</spam> <span class="slot">3</span></a></li>
-                            <li><a href="">tháng 10 <spam class="notify">Chưa Thi Đấu</spam> <span class="slot">4</span></a></li>
-                            <li><a href="">tháng 11 <spam class="notify">Chưa Thi Đấu</spam> <span class="slot">3</span></a></li>
-                            <li><a href="">tháng 1 <spam class="notify">Chưa Thi Đấu</spam> <span class="slot">3</span></a></li>
-                        </ul>
+                        <div class="row">
+                            <ul class="col col-66 tickets-tour ">
+                                <li><a href="">tháng 8 <span class="notify">Chưa Thi Đấu</span> <span class="slot">1</span></a></li>
+                                <li><a href="">tháng 9 <span class="notify">Chưa Thi Đấu</span> <span class="slot">3</span></a></li>
+                                <li><a href="">tháng 10 <span class="notify">Chưa Thi Đấu</span> <span class="slot">4</span></a></li>
+                                <li><a href="">tháng 11 <span class="notify">Chưa Thi Đấu</span> <span class="slot">3</span></a></li>
+                                <li><a href="">tháng 1 <span class="notify">Chưa Thi Đấu</span> <span class="slot">3</span></a></li>
+                            </ul>
+                            <div class="col col-third">
+                                <ul>
+                                    <li>Pos</li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="logoepl">
+
+                         <img src="/assets/img/Logo/PremierLeague_logo_Black.png" alt="">
+                        </div>
                         <div class="text-notify">Những Trận Derby Siêu Hấp Dẫn</div>
                         <div class="match-list">
                             <div class="match-item ">
-                               <img src="../assets/img/Match/ManUtdVSLiverpool.jpg" alt="MUNvsLIV" class="match-img">
+                               <img src="/assets/img/Match/ManUtdVSLiverpool.jpg" alt="MUNvsLIV" class="match-img">
                                <div class="match-body">
                                    <h3 class="match-heading">MUNvsLIV</h3>
                                    <p class="match-time">23:00 24/10/2021</p>
@@ -114,7 +187,7 @@
                                </div>
                             </div>
                             <div class="match-item ">
-                                <img src="../assets/img/Match/MUMC.jpg"alt="MUNvsMNC" class="match-img">
+                                <img src="/assets/img/Match/MUMC.jpg"alt="MUNvsMNC" class="match-img">
                                 <div class="match-body">
                                     <h3 class="match-heading">MUNvsMNC</h3>
                                     <p class="match-time">22:00 06/11/2021</p>
@@ -139,14 +212,14 @@
                 
                 
 
-                 <!--Contact Section-->
-                <div class="content-section">
+                 <!--Squad Section-->
+                <div id="squad" class="content-section">
                     
                     <h2 class="section-heading">
-                        Thông Tin
+                        SQUAD
                     </h2>
                     <p class="section-sub-heading">
-                        Thông Tin Chi Tiết Về CLB
+                        Thông Tin Chi Tiết Về Toàn Bộ Cầu Thủ
                     </p>
                     
                     <img  class="contact-teamwork-img" src="/assets/img/TeamWork/TeamWork1.jpg" alt="TeamWork">
@@ -185,10 +258,9 @@
             <div id="footer">
                 <div class="row footer-content">
                     <div class="col clo-hafl footer-info">
-                        <p><i class="ti-location-pin">Fan MU,Việt Nam</i></p>
-                        <p><i class="ti-facebook">Nguyễn Thế Hoài Nam </i></p>
-                        <p><i class="ti-link">https://www.facebook.com/nam.nguyenthehoai.3/</i></p>
-                        <p><i class="ti-email">Nthnam.dev@gmail.com</i></p>
+                        <i class="ti-location-pin footer-icon">Fan MU,Việt Nam</i>
+                        <a href="https://www.facebook.com/nam.nguyenthehoai.3/"><i class="ti-facebook"></i>Nguyễn Thế Hoài Nam</a>
+                        <i class="ti-email text-white"><span>Nthnam.dev@gmail.com</span></i>
                     </div>
                     <div class="col clo-hafl footer-form">
                         <form action="">
@@ -297,6 +369,16 @@
                 </div>
             </div>
 
+        </div>
+        <!--Modal Của Lịch Thi Đấu-->
+        <div class="modal-match">
+            <div class="modal-match-header text-center">
+                <img src="/assets/img/Logo/PremierLeague_logo_Black.png" alt="LoGo EPL">
+
+            </div>
+            <div class="modal-match-close">
+                <i class="ti-close"></i>
+            </div>
         </div>
         <script>
             //Đặt biến Cho Các Class
