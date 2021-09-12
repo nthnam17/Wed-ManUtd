@@ -26,6 +26,9 @@
 .mt-32{
     margin-top: 32px !important; 
 }
+.mb-8{
+    margin-bottom: 8px;
+}
 .row{
     margin-left: -8px;
     margin-right: -8px;
@@ -61,7 +64,14 @@
     display: inline-block;
     margin-top: 15px;
     border: none;
+    border-radius: 14px;
 }
+.btn-de:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
 
 /*main*/
 #main{
@@ -148,41 +158,27 @@ display: block;
 }
 
 #slider{
-position: relative;
-background-color: #999;
-height: 400px;
-margin-top: 46px;
-padding-top: 50%;
-background: url(/assets/img/Slider/Slider1.jpg) top center / cover no-repeat;
-
+margin: 0;
+overflow: hidden;
+}
+#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite; 
+  }
+#slider figure img{
+    width: 20%;
+    float: left;
+    max-height: 600px;
 }
 
-#slider .text-content{
-position: absolute;
-bottom: 45px;
-left: 50%;
-transform: translateX(-70px);
-text-align: center;
-}
-#slider .text-heading{
-text-transform: uppercase;
-font-size: 24px;
-transform: translateX(-50px);
-
-}
-#slider .text-about{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    margin-top: 10px;
-    transform: translateX(-50px);
-}
 #content{
     
 }
-.logoepl{
-
-}
-
 #content .content-section{
     width: 800px;
     margin-left: auto;
@@ -194,20 +190,15 @@ transform: translateX(-50px);
 }
 #content .section-heading{
     text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-    letter-spacing: 10px;
-    text-transform: uppercase
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: 6px underline #ff0000;
 
 
 }
-#content .section-sub-heading{
-    text-align: center;
-    font-size: 15px;
-    font-style: italic;
-    margin-top: 25px;
-    opacity: 0.8;
-}
+
 #content .about-text{
     margin-top: 25px;
     font-size: 15px;
@@ -311,6 +302,45 @@ transform: translateX(-50px);
     letter-spacing: 3px;
     font-style: italic;
 }
+/*Lịch Thi Đấu Lớn*/
+.times{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 12px;
+}
+.first-team{
+    
+
+}
+.second-team{
+    
+}
+span.name-team{
+    text-transform: uppercase;
+}
+.logo-team{
+    width: 30px
+
+}
+#match-day{
+    background-color: rgba(0,0,0, 0.3);
+    border-radius: 8px;
+    border: 1px solid #000;
+    text-align: center
+}
+#match-day li{
+    display: inline-block;
+    
+}
+.tour-month{
+    
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline #000;
+    letter-spacing: 1px;
+    background-color: rgba(0,0, 0, 0.3);
+}
 .tickets-tour > li >a:hover{
     color: #ff0000;
 }
@@ -362,13 +392,7 @@ transform: translateX(-50px);
 .match-img:hover{
     opacity: 0.6;
 }
-.match-btn2:hover,
-.match-btn3:hover,
-.match-btn:hover{
-    background-color: #ccc;
-    color: black;
-    cursor: pointer;
-}
+
 .content-section .contact-teamwork-img{
     width: 70%;
     height: 75%;
@@ -413,11 +437,10 @@ transform: translateX(-50px);
 
 }
 
-.footer-info a{
-   font-size: 18px;
-   text-decoration: none;
-   color: #fff;
-    
+.footer-info .blue{
+    background-color: rgb(21, 85, 145);
+    padding: 8px 15px;
+    border-radius: 15px;   
 }
 .footer-icon{
     width: 20px;
@@ -572,4 +595,15 @@ padding: 0 92px;
         transform: translateY(0px);
         opacity: 1;
     }
+}
+@keyframes slidy{
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
 }

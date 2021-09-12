@@ -1,0 +1,12 @@
+/*Pc */
+@media(min-width: 1720px){
+
+}
+/*Ipad */
+@media(min-width: 768px) and (max-width: 1719px){
+
+}
+/*Mobile */
+@media(max-width: 767px){
+    
+}
