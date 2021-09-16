@@ -1,0 +1,47 @@
+#footer{
+    width: 100%;
+    background-color: #000;
+    min-height: 150px;
+    
+
+}
+.footer-content{
+    justify-content: center;
+    margin-left: 15px;
+}
+.footer-info {
+    font-size: 18px;
+    line-height: 1.4;
+
+}
+
+.footer-info .blue{
+    background-color: rgb(21, 85, 145);
+    padding: 8px 15px;
+    border-radius: 15px;   
+}
+.footer-icon{
+    width: 20px;
+}
+.footer-form{
+    font-size: 15px;
+    
+}
+.footer-form .form-contact{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.footer-form .form-send{
+    padding: 7px 10px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    
+}
+.footer-form .form-send:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}

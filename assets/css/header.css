@@ -1,0 +1,96 @@
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+ height: 46px;
+ background-color: #000;
+ z-index: 1;
+}
+.mobi-menu-btn,
+#header .search-btn{
+    float: right;
+    line-height: 46px;
+    padding: 3px 22px;
+    display: none;
+
+}
+#header .icon-search{
+    font-size: 20px;
+    color: #fff;
+}
+#header .search-btn:hover{
+    color: #000;
+    background-color: #f44336;
+    cursor: pointer;
+}
+.mobi-menu-btn{
+ position: absolute;
+ top: 0;
+ right: 0;
+}
+.menu-icon{
+    color: #fff;
+}
+.mobi-menu-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.mobi-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
+#nav{
+display: inline-block;
+}
+
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav  li  a{
+
+text-decoration: none;
+line-height: 46px;
+padding: 0 24px;
+display: block;
+
+
+}
+#nav img{
+    max-height: 27px;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+#nav .subnav{
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+    display: none;
+    min-width: 160px;
+
+    }
+#nav .nav-down{
+    font-size: 16px;
+}
+#nav .subnav li {
+    display: block;
+    padding: 0px;
+}
+
+#nav .subnav li a{
+    color: #000;
+    
+}

@@ -1,12 +1,84 @@
 /*Pc */
 @media(min-width: 1720px){
 
+    #header .search-btn{
+        display: block;
+    }
 }
 /*Ipad */
-@media(min-width: 768px) and (max-width: 1719px){
+@media(min-width: 737px) and (max-width: 1719px){
 
+    #header .search-btn{
+        display: block;
+    }
 }
 /*Mobile */
-@media(max-width: 767px){
-    
+@media (max-width: 735px){
+    #header{
+        overflow: hidden;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #nav{
+        display: block;
+    }
+
+    #nav li{
+        display: block;
+    }
+    #nav li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    #nav .subnav li a{
+        color: #fff;
+        padding: 5px 45px;
+    }
+    #nav li a{
+        padding: 1px 24px;
+    }
+    #slider{
+        width: 197%;
+    }
+   
+    #content {
+        width: 100%;
+    }
+    .mobi-menu-btn{
+        display: block;
+    }
+    .member-item{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .member-avatar{
+        width: 60%;
+    }
+    .about-text{
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    #content .member-name{
+        font-size: 24px;
+    }
+    .news-section,
+    #footer,
+    .tour-section{
+        width: 197%;
+    }
+    .content-section{
+        padding: 30px 0 105px;
+    }
+    .contact-teamwork-sub a,
+    .contact-teamwork-member{
+        font-size: 20px;
+    }
+    .content-section .contact-teamwork-img{
+        width: 60%;
+    }
 }
