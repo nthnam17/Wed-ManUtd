@@ -82,6 +82,7 @@
 
 /*main*/
 #main{
+    overflow: hidden;
 }
 html{
     font-family: Arial, Helvetica, sans-serif;
